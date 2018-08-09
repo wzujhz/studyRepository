@@ -1,5 +1,7 @@
 package Unit3;
 
+import Unit1.Fruit;
+
 class Person implements Comparable<Person> {
 
 	private String name;
@@ -19,9 +21,14 @@ class Person implements Comparable<Person> {
 		// Person p = (Person) obj;
 		// return p.getName().equals(this.name) && p.getAge().equals(this.age);
 		// }
-
-		Person p = (Person) obj;
-		return p.getName().equals(this.name) && p.getAge().equals(this.age);
+		if (obj.getClass() == this.getClass()) {
+			Person p = (Person) obj;
+			return p.getName().equals(this.name) && p.getAge().equals(this.age);
+		} else if (obj.getClass() == Fruit.class) {
+			Fruit f = (Fruit) obj;
+			return this.name.equals(f.getName());
+		}
+		return false;
 	}
 
 	public String getName() {

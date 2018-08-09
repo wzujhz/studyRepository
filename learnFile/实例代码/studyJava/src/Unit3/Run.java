@@ -1,5 +1,7 @@
 package Unit3;
 
+import Unit1.Fruit;
+
 public class Run {
 	public static void main(String[] args) {
 		// Person person = new Person("lis", 14);
@@ -17,7 +19,8 @@ public class Run {
 
 		Person p = new Person("zhangsan", 10);
 		Person p2 = new Person("zhangsan", 10);
+		Fruit f = new Fruit("zhangsan", "zhangsan", "zhangsan");
 
-		System.out.println("p1是否等于p2:" + (p.equals(p2)));
+		System.out.println("p1是否等于p2:" + (p.equals(f)));
 	}
 }
