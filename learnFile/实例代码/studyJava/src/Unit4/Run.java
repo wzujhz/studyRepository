@@ -12,20 +12,20 @@ public class Run {
 		// AbstractOuter out = new OuterImpl();
 		// out.printOuter();
 
-		// StaticOuter.Inner in = new StaticOuter.Inner();
-		// in.print();
+		StaticOuter.Inner in = new StaticOuter.Inner();
+		in.print();
 
 		// new Message().fun();
 
-		AbstractMessage msg = new AbstractMessage() {
-
-			@Override
-			public void print() {
-				System.out.println(this.getMsg());
-
-			}
-		};
-		msg.print();
+		// AbstractMessage msg = new AbstractMessage() {
+		//
+		// @Override
+		// public void print() {
+		// System.out.println(this.getMsg());
+		//
+		// }
+		// };
+		// msg.print();
 	}
 
 }

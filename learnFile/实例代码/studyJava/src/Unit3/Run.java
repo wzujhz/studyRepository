@@ -17,7 +17,7 @@ public class Run {
 
 		// java对象比较
 
-		Person p = new Person("zhangsan", 10);
+		Person p = new Person(null, null);
 		Person p2 = new Person("zhangsan", 10);
 		Fruit f = new Fruit("zhangsan", "zhangsan", "zhangsan");
 
